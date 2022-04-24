@@ -1,18 +1,17 @@
-import './App.scss';
-import List from './routes/figures/List';
-import {
-
-  Routes,
-  Route,
-} from "react-router-dom";
+import "./App.scss";
+import List from "./routes/figures/List";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <Routes>
-    <Route path="/figures" element={<List />} />
-
-</Routes>
+    <div className="mt-2">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/figures" element={<List />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
