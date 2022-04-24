@@ -14,9 +14,7 @@ const List = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const { data: response } = await axios.get(
-          process.env.REACT_API_URL + "/stuff/to/fetch"
-        );
+        const { data: response } = await axios.get("yoga_api/figures/get_all");
         setLoading(response);
       } catch (error) {
         toast.error("Erreur lors de la lecture");
@@ -34,12 +32,12 @@ const List = () => {
         <Spinner animation="border" variant="primary" />
       ) : (
         <div>
-          <h2>Liste des figures</h2>
+          <h2>Liste des figuress</h2>
           {data.map((item) => (
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" src={item.image} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{item.nom_fr}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
                 <Button variant="primary">Modifier</Button>
                 <Button variant="primary">Supprimer</Button>
