@@ -10,16 +10,42 @@ const List = () => {
   const [data, setData] = useState<Figure[]>([]);
 
   useEffect(() => {
-    console.log("appel");
+    const test = [
+      {
+        ID: 1,
+        nom_fr: "nom fr",
+        nom_sk: "nom sk",
+        image: "test",
+        description: "descr",
+        groupe_musc_1_ID: 1,
+        groupe_musc_2_ID: 2,
+        objectif_ID: 3,
+        energetique: "energetik",
+      },
+      {
+        ID: 2,
+        nom_fr: "nom fr",
+        nom_sk: "nom sk",
+        image: "test",
+        description: "descr",
+        groupe_musc_1_ID: 1,
+        groupe_musc_2_ID: 2,
+        objectif_ID: 3,
+        energetique: "energetik",
+      },
+    ];
     const fetchData = async () => {
-      setLoading(true);
+      /*setLoading(true);
       try {
         const { data: response } = await axios.get("yoga_api/figures/get_all");
-        setLoading(response);
+
+        
       } catch (error) {
         toast.error("Erreur lors de la lecture");
       }
-      setLoading(false);
+      setLoading(false);*/
+
+      setData(test);
     };
 
     fetchData();
@@ -32,7 +58,7 @@ const List = () => {
         <Spinner animation="border" variant="primary" />
       ) : (
         <div>
-          <h2>Liste des figuress</h2>
+          <h2>Liste des figures</h2>
           {data.map((item) => (
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={item.image} />
