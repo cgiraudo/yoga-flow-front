@@ -37,17 +37,14 @@ const List = () => {
       },
     ];
     const fetchData = async () => {
-      /*setLoading(true);
+      setLoading(true);
       try {
         const { data: response } = await axios.get("yoga_api/figures/get_all");
-
-        
+        setData(response.figures);
       } catch (error) {
         toast.error("Erreur lors de la lecture");
       }
-      setLoading(false);*/
-
-      setData(test);
+      setLoading(false);
     };
 
     fetchData();
