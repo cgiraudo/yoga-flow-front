@@ -9,3 +9,11 @@ export interface Figure {
   objectif_ID: number;
   energetique: string;
 }
+
+export interface Ingredient {
+  ID: number;
+  nom: string;
+  proteines100g: number;
+  lipides100g: number;
+  glucides100g: number;
+}
