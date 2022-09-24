@@ -13,8 +13,8 @@ export interface Figure {
 export interface Ingredient {
   ID: number;
   nom: string;
-  proteines100g: number;
-  lipides100g: number;
-  glucides100g: number;
-  calories100g: number;
+  proteines100g?: number;
+  lipides100g?: number;
+  glucides100g?: number;
+  calories100g?: number;
 }
