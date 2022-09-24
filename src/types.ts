@@ -11,10 +11,11 @@ export interface Figure {
 }
 
 export interface Ingredient {
-  ID: number;
+  ID: string;
   nom: string;
-  proteines100g?: number;
-  lipides100g?: number;
-  glucides100g?: number;
-  calories100g?: number;
+  proteines: number;
+  lipides: number;
+  glucides: number;
+  calories: number;
+  ratio_unite: number;
 }
