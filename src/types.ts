@@ -16,4 +16,5 @@ export interface Ingredient {
   proteines100g: number;
   lipides100g: number;
   glucides100g: number;
+  calories100g: number;
 }

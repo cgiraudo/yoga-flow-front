@@ -1,14 +1,14 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplify99c8faa199af4-staging-103430-authRole",
-      "UnauthRoleArn": "arn:aws:iam::937844440096:role/amplify-amplify99c8faa199af4-staging-103430-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::937844440096:role/amplify-amplify99c8faa199af4-staging-103430-authRole",
+      "AuthRoleName": "amplify-recettes-dev-155333-authRole",
+      "UnauthRoleArn": "arn:aws:iam::937844440096:role/amplify-recettes-dev-155333-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::937844440096:role/amplify-recettes-dev-155333-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplify99c8faa199af4-staging-103430-deployment",
-      "UnauthRoleName": "amplify-amplify99c8faa199af4-staging-103430-unauthRole",
-      "StackName": "amplify-amplify99c8faa199af4-staging-103430",
-      "StackId": "arn:aws:cloudformation:us-east-1:937844440096:stack/amplify-amplify99c8faa199af4-staging-103430/13c45420-e972-11ec-a221-0ea59bdb7d1b",
+      "DeploymentBucketName": "amplify-recettes-dev-155333-deployment",
+      "UnauthRoleName": "amplify-recettes-dev-155333-unauthRole",
+      "StackName": "amplify-recettes-dev-155333",
+      "StackId": "arn:aws:cloudformation:us-east-1:937844440096:stack/amplify-recettes-dev-155333/486ed600-3c10-11ed-93f2-0a7686d5fc23",
       "AmplifyAppId": "d2mkbhi0v1mfli"
     }
   }

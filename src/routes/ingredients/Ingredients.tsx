@@ -5,6 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Row, Spinner, Form, Col } from "react-bootstrap";
 import ingredients from "../../services/data";
+import { DataStore } from "@aws-amplify/datastore";
+import { IngredientModel } from "../../models";
 
 const Ingredients = () => {
   const [loading, setLoading] = useState<Boolean>(false);
@@ -13,16 +15,13 @@ const Ingredients = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      try {
-        const { data: response } = await axios.get("yoga_api/figures/get_all");
-        setData(response.figures);
-      } catch (error) {
-        toast.error("Erreur lors de la lecture");
-      }
+      const models = await DataStore.query(IngredientModel);
+      console.log("models", models);
+
       setLoading(false);
     };
 
-    //fetchData();
+    fetchData();
   }, []);
 
   return (
