@@ -3,8 +3,6 @@ import List from "./routes/figures/List";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Ingredients from "./routes/ingredients/Ingredients";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { withAuthenticator } from "@aws-amplify/ui-react";
-import "@aws-amplify/ui-react/styles.css";
 
 const App = () => {
   return (
@@ -31,5 +29,4 @@ const App = () => {
   );
 };
 
-//export default withAuthenticator(App);
 export default App;
