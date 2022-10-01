@@ -1,5 +1,4 @@
 import "./App.scss";
-import List from "./routes/figures/List";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Ingredients from "./routes/ingredients/Ingredients";
 import { Container, Nav, Navbar } from "react-bootstrap";
@@ -22,7 +21,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Ingredients />} />
-          <Route path="/figures" element={<List />} />
+          <Route path="/recettes" element={<Ingredients />} />
         </Routes>
       </BrowserRouter>
     </Container>
